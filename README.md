@@ -103,3 +103,11 @@ A user should be able to:
 - On client show route, send response that includes total amount for all
   membership for that client.
 - Create index and update routes for gym and client
+
+How to finish:
+
+- validates :client, uniqueness: { scope: :gym } for specific validtaion for this lab.
+
+- adding dependent: :destroy to delete gyms from gym model. (*first deliverable for gym deleting).
+
+- for the bonus you have to create serializer for client and use attributes or the same things that are needed just for migrations but also, total for all memberships for that specific client. then create a relationship with the memeberships because he wants to grab all of them and add them. finally create a def method of total to define what you want and use byebug to grab what you need, using self will help because it helps you realize you want the object.
